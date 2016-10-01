@@ -37,11 +37,17 @@ void loop()
         
         case 1:
                     
+                for(i=0;i<3;i++)
+                {
                 if(fabs(area[i])>(fabs(p1[i]) || fabs(p2[i])))
                 {
                     if(area[i]>p1[i]) p1[i]=area[i]; 
                     else p2[i]=area[i]; 
                 }
+                item[i]=(p1[i]+p2[i])/2
+                }
+                
+                
         break;
         
     }
